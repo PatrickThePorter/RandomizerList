@@ -104,7 +104,7 @@ int main()
         {
             cout << "\nType in the name here:\n";
             string newName;
-            cin >> newName;
+            getline(cin, newName);
             addNameToList(newName);
         }
         else if (cmd == "random")
@@ -145,7 +145,7 @@ int main()
             }
             cout << "\nType in the name here:\n";
             string removeName;
-            cin >> removeName;
+            getline(cin, removeName);
             removeNameFromList(removeName);
         }
         else if (cmd == "showTop")
